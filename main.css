@@ -1,0 +1,165 @@
+body
+{
+	margin: 0;
+	background-color: #26282E;
+	color: #209781;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+}
+
+a:link    { color: #209781; text-decoration: none; }
+a:visited { color: #209781; }
+a:active  { color: #209781; }
+a:hover   { color: #E9B64A; }
+
+h1
+{
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p
+{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.board
+{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.cardA
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url("img/karta.png");
+	border: 4px solid #e9b64a;
+	border-radius: 4px;
+	cursor: default;
+	filter: brightness(100%);
+	transition: all .3s ease-in-out;
+}
+
+.card
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url("img/karta.png");
+	border: 4px solid #51c8b2;
+	border-radius: 4px;
+	cursor: pointer;
+	filter: brightness(70%);
+	transition: all .3s ease-in-out;
+}
+
+.card:hover
+{
+	border: 4px solid #e9b64a;
+	filter: brightness(100%);
+}
+
+.score
+{
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+
+button
+{
+    width: 400px;
+    height: 90px;
+    font-size: 48px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #0c6051;
+    -webkit-box-shadow: 2px 2px 50px 0px rgb(92, 91, 91);
+    -moz-box-shadow: 2px 2px 50px 0px rgb(92, 91, 91);
+    box-shadow: 2px 2px 50px 0px rgb(92, 91, 91);
+    color: #afa9a9;
+    font-family: fantasy;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover
+{
+    background-color: #0d715f;
+    color: lightgray;
+}
+
+h1#highscore
+{
+    font-size: 48px;
+    margin-top: -20px;
+}
+
+.boardSize {
+    margin: 10px 13px;
+    cursor: pointer;
+    transition: 0.38s;
+}
+
+.boardSize:hover {
+    color: #E9B64A;
+}
+
+.boardSizeA {
+    color: #b1852a;
+
+}
+
+#select {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+input[type="number"] {
+    height: 45px;
+    width: 50px;
+    margin-top: 35px;
+    background-color: #37393F;
+    font-size: 22px;
+    color: #B1B8CB;
+    border: solid black;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button#start {
+    height: 70px;
+    width: 250px;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+span#err {
+    font-family: fantasy;
+    color: darkred;
+    height: 40px;
+    display: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type=number]::-moz-inner-spin-button {
+    display: none;
+}
